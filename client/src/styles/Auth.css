@@ -1,0 +1,130 @@
+/* Auth.css - Elegant and Consistent Styles for Authentication Pages */
+
+/* General Page Layout */
+.main-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Light gray for a calming effect */
+    padding: 2rem;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.welcome h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4e4e4e; /* Dark gray for contrast */
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    color: #6e6e6e; /* Slightly lighter gray */
+}
+
+/* Form Title */
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #4e4e4e;
+    margin-bottom: 1.5rem;
+}
+
+/* Authentication Form */
+.auth-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff; /* White background for form */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Items */
+.form-item {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #4e4e4e;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #64b5f6; /* Soft blue */
+}
+
+/* Button Styles */
+button[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #64b5f6; /* Soft blue */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #42a5f5; /* Slightly darker blue */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #64b5f6;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom Links */
+.auth-form + div {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.auth-form + div p {
+    font-size: 1rem;
+    color: #6e6e6e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-form {
+        padding: 1.5rem;
+    }
+
+    .welcome h1 {
+        font-size: 2rem;
+    }
+
+    .auth-form + div p {
+        font-size: 0.9rem;
+    }
+}
